@@ -8,7 +8,7 @@ from streamlit_folium import folium_static
 st.set_page_config(layout="wide")
 
 def load_data():
-    file_path = "/Users/talvin.ramnah/Downloads/User heatmap for Yonder (1).csv"
+    file_path = "https://raw.githubusercontent.com/talvinramnahTheModernMilkman/Delivery-Map/refs/heads/main/User%20heatmap%20for%20Yonder%20(1).csv"
     df = pd.read_csv(file_path)
     return df[
         (df['LATITUDE'].between(49.8, 60.9)) & 
