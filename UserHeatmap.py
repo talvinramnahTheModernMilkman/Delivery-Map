@@ -31,7 +31,7 @@ def create_cluster_map(data):
     return m
 
 def main():
-    st.title("Customer Distribution Map")
+    st.title("TMM waitlist")
     df = load_data()
     m = create_cluster_map(df)
     
