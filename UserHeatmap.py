@@ -20,7 +20,7 @@ def load_data():
 
 def load_borough_geojson():
     # Replace this with the raw link to your GeoJSON file
-    url = "https://raw.githubusercontent.com/radoi90/housequest-data/master/house_price_london_boroughs_simplified.geojson"
+    url = "https://raw.githubusercontent.com/radoi90/housequest-data/refs/heads/master/london_boroughs.geojson"
     response = requests.get(url)
     data = json.loads(response.text)
     return data
